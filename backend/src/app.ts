@@ -22,7 +22,7 @@ const swaggerSpec = swaggerJsdoc({
   swaggerDefinition: {
     openapi: '3.0.1',
     info: {
-      title: 'Biowoma API',
+      title: 'Registrador Botânico API',
       version: '0.1.0',
       description: 'API corporativa para identificação de plantas.',
     },

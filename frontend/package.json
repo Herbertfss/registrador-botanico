@@ -1,5 +1,5 @@
 {
-  "name": "biowoma-frontend",
+  "name": "registrador-botanico-frontend",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -11,15 +11,16 @@
     "test": "vitest run"
   },
   "dependencies": {
+    "lucide-react": "^1.14.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "@vitejs/plugin-react": "^4.3.1",
     "@typescript-eslint/eslint-plugin": "^7.0.0",
     "@typescript-eslint/parser": "^7.0.0",
+    "@vitejs/plugin-react": "^4.3.1",
     "autoprefixer": "^10.4.23",
     "eslint": "^8.57.0",
     "eslint-config-airbnb": "^19.0.4",

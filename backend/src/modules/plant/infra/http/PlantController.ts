@@ -28,7 +28,7 @@ const router = Router();
 router.post('/auth/login', validate(loginSchema), (req, res) => {
   const { email, password } = req.body as { email: string; password: string };
 
-  if (email !== 'admin@biowoma.com' || password !== 'biowoma123') {
+  if (email !== 'admin@registradorbotanico.com' || password !== 'registradorbotanico123') {
     return res.status(401).json({ message: 'Credenciais inválidas.' });
   }
 

@@ -1,8 +1,8 @@
-// Biowoma - Guia Inteligente de Botânica
+// Registrador Botânico - Guia Inteligente de Botânica
 // Script básico de inicialização
 
 document.addEventListener('DOMContentLoaded', function () {
-  console.log('🌿 Biowoma - Guia Inteligente de Botânica');
+  console.log('🌿 Registrador Botânico - Guia Inteligente de Botânica');
   console.log('Sistema inicializado com sucesso!');
 
   // Animação simples para os cards
