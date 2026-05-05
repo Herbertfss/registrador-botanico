@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useState } from 'react';
 import { createPlantIdentification, authenticate } from '../lib/api';
 import { CreatePlantIdentificationRequest, PlantIdentification } from '../types';
 import { SkeletonCard } from './SkeletonCard';
@@ -17,7 +17,7 @@ export function PlantIdentifier({ token, onAuthToken }: PlantIdentifierProps) {
   const [result, setResult] = useState<PlantIdentification | null>(null);
   const [authenticating, setAuthenticating] = useState(false);
 
-  const hasValidToken = useMemo(() => Boolean(token), [token]);
+  const hasValidToken = !!token;
 
   async function handleLogin() {
     setAuthenticating(true);
@@ -70,6 +70,7 @@ export function PlantIdentifier({ token, onAuthToken }: PlantIdentifierProps) {
       aria-labelledby="plant-identification-title"
       className="rounded-3xl bg-white p-8 shadow-soft"
     >
+      {/* Header do componente */}
       <div className="flex flex-col gap-4 sm:flex-row sm:justify-between sm:items-center">
         <div>
           <p className="text-sm uppercase tracking-[0.3em] text-green-600">Workflow</p>
@@ -94,6 +95,7 @@ export function PlantIdentifier({ token, onAuthToken }: PlantIdentifierProps) {
         </button>
       </div>
 
+      {/* Formulário */}
       <form onSubmit={handleSubmit} className="mt-8 grid gap-6">
         <div className="grid gap-4 sm:grid-cols-2">
           <label className="space-y-2">
@@ -105,7 +107,7 @@ export function PlantIdentifier({ token, onAuthToken }: PlantIdentifierProps) {
               placeholder="Ex: Samambaia"
               aria-label="Nome da planta"
               required
-              className="w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 outline-none transition focus:border-green-500 focus:ring-2 focus:ring-green-100"
+              className="w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 outline-none transition focus:border-green-500 focus:ring-2 focus:ring-green-100 placeholder:text-slate-400"
             />
           </label>
 
@@ -118,7 +120,7 @@ export function PlantIdentifier({ token, onAuthToken }: PlantIdentifierProps) {
               placeholder="https://..."
               aria-label="URL da imagem da planta"
               required
-              className="w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 outline-none transition focus:border-green-500 focus:ring-2 focus:ring-green-100"
+              className="w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 outline-none transition focus:border-green-500 focus:ring-2 focus:ring-green-100 placeholder:text-slate-400"
             />
           </label>
         </div>
@@ -132,7 +134,7 @@ export function PlantIdentifier({ token, onAuthToken }: PlantIdentifierProps) {
             aria-label="Descrição da planta"
             rows={4}
             required
-            className="w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 outline-none transition focus:border-green-500 focus:ring-2 focus:ring-green-100"
+            className="w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 outline-none transition focus:border-green-500 focus:ring-2 focus:ring-green-100 placeholder:text-slate-400"
           />
         </label>
 
@@ -159,6 +161,7 @@ export function PlantIdentifier({ token, onAuthToken }: PlantIdentifierProps) {
         </div>
       </form>
 
+      {/* Resultado ou Skeleton */}
       {loading ? (
         <SkeletonCard />
       ) : result ? (
@@ -175,6 +178,7 @@ export function PlantIdentifier({ token, onAuthToken }: PlantIdentifierProps) {
               src={result.imageUrl}
               alt={`Imagem de ${result.name}`}
               className="h-72 w-full object-cover"
+              loading="lazy"
             />
           </div>
         </article>
