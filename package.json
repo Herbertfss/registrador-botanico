@@ -1,5 +1,5 @@
 {
-  "name": "biowoma-monorepo",
+  "name": "registrador-botanico-monorepo",
   "private": true,
   "workspaces": [
     "frontend",

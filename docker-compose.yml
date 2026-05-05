@@ -6,7 +6,7 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: biowoma
+      POSTGRES_DB: registrador_botanico
     volumes:
       - postgres_data:/var/lib/postgresql/data
     ports:
@@ -22,7 +22,7 @@ services:
       - ./backend:/app
       - /app/node_modules
     environment:
-      DATABASE_URL: postgres://postgres:postgres@postgres:5432/biowoma
+      DATABASE_URL: postgres://postgres:postgres@postgres:5432/registrador_botanico
       JWT_SECRET: supersecretjwtkey
     ports:
       - '4000:4000'

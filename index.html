@@ -1,145 +1,195 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Biowoma - Guia Inteligente de Botânica. Identificação de plantas por imagem, diagnóstico de patologias e guia de preparos naturais. Conectando tecnologia e cuidado ambiental.">
-    <meta name="keywords" content="botânica, plantas, identificação, diagnóstico, natureza, preparos naturais">
-    <meta name="author" content="Biowoma">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Registrador Botânico - Guia Inteligente de Botânica. Identificação de plantas por imagem, diagnóstico de patologias e guia de preparos naturais. Conectando tecnologia e cuidado ambiental."
+    />
+    <meta
+      name="keywords"
+      content="botânica, plantas, identificação, diagnóstico, natureza, preparos naturais"
+    />
+    <meta name="author" content="Registrador Botânico" />
+
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://biowoma.example.com/">
-    <meta property="og:title" content="Biowoma - Guia Inteligente de Botânica">
-    <meta property="og:description" content="Identificação de plantas por imagem, diagnóstico de patologias e guia de preparos naturais. Conectando tecnologia e cuidado ambiental.">
-    <meta property="og:image" content="https://biowoma.example.com/og-image.jpg">
-    
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://registradorbotanico.example.com/" />
+    <meta property="og:title" content="Registrador Botânico - Guia Inteligente de Botânica" />
+    <meta
+      property="og:description"
+      content="Identificação de plantas por imagem, diagnóstico de patologias e guia de preparos naturais. Conectando tecnologia e cuidado ambiental."
+    />
+    <meta property="og:image" content="https://registradorbotanico.example.com/og-image.jpg" />
+
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://biowoma.example.com/">
-    <meta property="twitter:title" content="Biowoma - Guia Inteligente de Botânica">
-    <meta property="twitter:description" content="Identificação de plantas por imagem, diagnóstico de patologias e guia de preparos naturais. Conectando tecnologia e cuidado ambiental.">
-    <meta property="twitter:image" content="https://biowoma.example.com/og-image.jpg">
-    
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://registradorbotanico.example.com/" />
+    <meta property="twitter:title" content="Registrador Botânico - Guia Inteligente de Botânica" />
+    <meta
+      property="twitter:description"
+      content="Identificação de plantas por imagem, diagnóstico de patologias e guia de preparos naturais. Conectando tecnologia e cuidado ambiental."
+    />
+    <meta property="twitter:image" content="https://registradorbotanico.example.com/og-image.jpg" />
+
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
     <!-- Google Fonts: Inter + Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-    
-    <title>Biowoma - Guia Inteligente de Botânica</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Registrador Botânico - Guia Inteligente de Botânica</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <!-- Skip link para acessibilidade -->
     <a href="#main-content" class="sr-only sr-only-focusable">Pular para o conteúdo principal</a>
-    
+
     <header class="header" role="banner">
-        <div class="header__content">
-            <nav class="nav" role="navigation" aria-label="Menu principal">
-                <div class="nav__brand">
-                    <h1 class="header__title">🌿 Biowoma</h1>
-                    <p class="header__subtitle">Guia inteligente de botânica</p>
-                </div>
-                <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul class="nav__menu" id="nav-menu" role="menubar">
-                    <li role="none"><a href="#inicio" role="menuitem" class="nav__link">Início</a></li>
-                    <li role="none"><a href="#recursos" role="menuitem" class="nav__link">Recursos</a></li>
-                    <li role="none"><a href="#sobre" role="menuitem" class="nav__link">Sobre</a></li>
-                    <li role="none"><a href="#contato" role="menuitem" class="nav__link">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-        <!-- Wave SVG decorativa -->
-        <svg class="header-wave" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true">
-            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25"></path>
-            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5"></path>
-            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"></path>
-        </svg>
+      <div class="header__content">
+        <nav class="nav" role="navigation" aria-label="Menu principal">
+          <div class="nav__brand">
+            <h1 class="header__title">🌿 Registrador Botânico</h1>
+            <p class="header__subtitle">Guia inteligente de botânica</p>
+          </div>
+          <button
+            class="nav__toggle"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+            aria-controls="nav-menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav__menu" id="nav-menu" role="menubar">
+            <li role="none"><a href="#inicio" role="menuitem" class="nav__link">Início</a></li>
+            <li role="none"><a href="#recursos" role="menuitem" class="nav__link">Recursos</a></li>
+            <li role="none"><a href="#sobre" role="menuitem" class="nav__link">Sobre</a></li>
+            <li role="none"><a href="#contato" role="menuitem" class="nav__link">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Wave SVG decorativa -->
+      <svg class="header-wave" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true">
+        <path
+          d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+          opacity=".25"
+        ></path>
+        <path
+          d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+          opacity=".5"
+        ></path>
+        <path
+          d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+        ></path>
+      </svg>
     </header>
-    
+
     <main id="main-content" class="main" role="main">
-        <section class="features" id="recursos" aria-labelledby="features-heading">
-            <h2 id="features-heading" class="sr-only">Nossos Recursos</h2>
-            
-            <article class="feature-card" role="article" aria-labelledby="feature1-title">
-                <span class="feature-card__icon" aria-hidden="true">📷</span>
-                <h2 class="feature-card__title" id="feature1-title">Identificação por Imagem</h2>
-                <p class="feature-card__description">Faça upload de fotos de plantas para identificação automática</p>
-                <button class="btn btn-primary" onclick="simulateImageUpload()" aria-label="Identificar planta por imagem">
-                    Identificar Planta →
-                </button>
-            </article>
-            
-            <article class="feature-card" role="article" aria-labelledby="feature2-title">
-                <span class="feature-card__icon" aria-hidden="true">🔍</span>
-                <h2 class="feature-card__title" id="feature2-title">Diagnóstico de Patologias</h2>
-                <p class="feature-card__description">Detecte doenças e problemas em suas plantas</p>
-                <button class="btn btn-primary" onclick="simulateDiagnosis()" aria-label="Diagnosticar patologias da planta">
-                    Identificar Planta →
-                </button>
-            </article>
-            
-            <article class="feature-card" role="article" aria-labelledby="feature3-title">
-                <span class="feature-card__icon" aria-hidden="true">📖</span>
-                <h2 class="feature-card__title" id="feature3-title">Guia de Preparos Naturais</h2>
-                <p class="feature-card__description">Aprenda a criar chás, extratos e remédios naturais</p>
-                <button class="btn btn-primary" onclick="simulateDiagnosis()" aria-label="Acessar guia de preparos naturais">
-                    Identificar Planta →
-                </button>
-            </article>
-        </section>
-        
-        <section class="cta" id="contato" aria-labelledby="cta-heading">
-            <h2 class="cta__title" id="cta-heading">Conectando Tecnologia e Cuidado Ambiental</h2>
-            <p class="cta__description">Junte-se a nós na missão de proteger e entender a natureza</p>
-            
-            <div class="cta__upload-area">
-                <label for="imageUpload" class="btn btn-highlight" style="cursor: pointer;">
-                    📤 Fazer Upload de Imagem
-                </label>
-                <input 
-                    type="file" 
-                    id="imageUpload" 
-                    accept="image/*" 
-                    class="visually-hidden"
-                    aria-label="Upload de imagem para identificação de planta"
-                    onchange="handleImageUpload(event)"
-                >
-                <p class="text-muted" style="margin-top: var(--espaco-s); font-size: 0.875rem;">
-                    Formatos suportados: JPG, PNG, GIF (máx. 10MB)
-                </p>
-            </div>
-        </section>
-    </main>
-    
-    <footer class="footer" role="contentinfo">
-        <div class="container">
-            <p class="footer__text">&copy; 2026 Biowoma. Todos os direitos reservados.</p>
+      <section class="features" id="recursos" aria-labelledby="features-heading">
+        <h2 id="features-heading" class="sr-only">Nossos Recursos</h2>
+
+        <article class="feature-card" role="article" aria-labelledby="feature1-title">
+          <span class="feature-card__icon" aria-hidden="true">📷</span>
+          <h2 class="feature-card__title" id="feature1-title">Identificação por Imagem</h2>
+          <p class="feature-card__description">
+            Faça upload de fotos de plantas para identificação automática
+          </p>
+          <button
+            class="btn btn-primary"
+            onclick="simulateImageUpload()"
+            aria-label="Identificar planta por imagem"
+          >
+            Identificar Planta →
+          </button>
+        </article>
+
+        <article class="feature-card" role="article" aria-labelledby="feature2-title">
+          <span class="feature-card__icon" aria-hidden="true">🔍</span>
+          <h2 class="feature-card__title" id="feature2-title">Diagnóstico de Patologias</h2>
+          <p class="feature-card__description">Detecte doenças e problemas em suas plantas</p>
+          <button
+            class="btn btn-primary"
+            onclick="simulateDiagnosis()"
+            aria-label="Diagnosticar patologias da planta"
+          >
+            Identificar Planta →
+          </button>
+        </article>
+
+        <article class="feature-card" role="article" aria-labelledby="feature3-title">
+          <span class="feature-card__icon" aria-hidden="true">📖</span>
+          <h2 class="feature-card__title" id="feature3-title">Guia de Preparos Naturais</h2>
+          <p class="feature-card__description">
+            Aprenda a criar chás, extratos e remédios naturais
+          </p>
+          <button
+            class="btn btn-primary"
+            onclick="simulateDiagnosis()"
+            aria-label="Acessar guia de preparos naturais"
+          >
+            Identificar Planta →
+          </button>
+        </article>
+      </section>
+
+      <section class="cta" id="contato" aria-labelledby="cta-heading">
+        <h2 class="cta__title" id="cta-heading">Conectando Tecnologia e Cuidado Ambiental</h2>
+        <p class="cta__description">Junte-se a nós na missão de proteger e entender a natureza</p>
+
+        <div class="cta__upload-area">
+          <label for="imageUpload" class="btn btn-highlight" style="cursor: pointer">
+            📤 Fazer Upload de Imagem
+          </label>
+          <input
+            type="file"
+            id="imageUpload"
+            accept="image/*"
+            class="visually-hidden"
+            aria-label="Upload de imagem para identificação de planta"
+            onchange="handleImageUpload(event)"
+          />
+          <p class="text-muted" style="margin-top: var(--espaco-s); font-size: 0.875rem">
+            Formatos suportados: JPG, PNG, GIF (máx. 10MB)
+          </p>
         </div>
+      </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <p class="footer__text">&copy; 2026 Registrador Botânico. Todos os direitos reservados.</p>
+      </div>
     </footer>
-    
+
     <!-- Botão Voltar ao Topo -->
-    <button 
-        id="backToTop" 
-        class="btn btn-secondary" 
-        style="position: fixed; bottom: var(--espaco-xl); right: var(--espaco-xl); display: none; z-index: var(--z-overlay);"
-        onclick="scrollToTop()"
-        aria-label="Voltar ao topo da página"
+    <button
+      id="backToTop"
+      class="btn btn-secondary"
+      style="
+        position: fixed;
+        bottom: var(--espaco-xl);
+        right: var(--espaco-xl);
+        display: none;
+        z-index: var(--z-overlay);
+      "
+      onclick="scrollToTop()"
+      aria-label="Voltar ao topo da página"
     >
-        ↑ Topo
+      ↑ Topo
     </button>
-    
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

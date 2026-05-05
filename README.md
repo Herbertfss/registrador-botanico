@@ -1,6 +1,6 @@
-# Biowoma
+# Registrador Botânico
 
-Biowoma é uma plataforma corporativa de identificação e manejo de plantas. Esta implementação foi refatorada para um monorepo moderno com frontend em React + TypeScript e backend em Node.js + TypeScript usando Clean Architecture.
+Registrador Botânico é uma plataforma corporativa de identificação e manejo de plantas. Esta implementação foi refatorada para um monorepo moderno com frontend em React + TypeScript e backend em Node.js + TypeScript usando Clean Architecture.
 
 ## Arquitetura
 
@@ -14,7 +14,7 @@ Biowoma é uma plataforma corporativa de identificação e manejo de plantas. Es
 ## Estrutura do Monorepo
 
 ```text
-Biowoma/
+Registrador Botânico/
 ├─ .github/
 │  └─ workflows/
 │     └─ ci.yml
@@ -94,7 +94,7 @@ docker compose up --build
 ### Autenticação
 
 - `POST /api/auth/login`
-  - body: `{ "email": "admin@biowoma.com", "password": "biowoma123" }`
+  - body: `{ "email": "admin@registradorbotanico.com", "password": "registradorbotanico123" }`
   - retorna: `{ "token": "..." }`
 
 ### Identificação de Planta
