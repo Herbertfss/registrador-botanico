@@ -8,7 +8,10 @@ export async function authenticate(): Promise<string> {
     headers: {
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify({ email: 'admin@registradorbotanico.com', password: 'registradorbotanico123' }),
+    body: JSON.stringify({
+      email: 'admin@registradorbotanico.com',
+      password: 'registradorbotanico123',
+    }),
   });
 
   if (!response.ok) {
